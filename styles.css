@@ -847,8 +847,72 @@ header {
   }
 }
 
-/* Para tablets (pantallas hasta 768px) */
+/* --- Responsive Styles for Móviles (hasta 480px) --- */
+@media (max-width: 480px) {
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+    background-color: #1428A0;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .logo {
+    margin-left: 0;
+  }
+
+  /* Hero Section */
+  .hero-content h1 {
+    font-size: 22px;
+    padding: 0 10px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .btn {
+    width: 90%; /* Botón ocupa casi todo el ancho */
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  /* Secciones en Columnas */
+  .featured1, .success-case-content, .testimonial-content {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .services-grid1 {
+    grid-template-columns: 1fr; /* Una sola columna para servicios en móviles */
+    gap: 20px;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 20px;
+    font-size: 14px;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+  }
+}
+
+/* --- Responsive Styles for Tablets (hasta 768px) --- */
 @media (max-width: 768px) {
+  /* Navbar */
   .navbar {
     padding: 10px 5%;
     background-color: #1428A0;
@@ -867,54 +931,23 @@ header {
   .btn {
     width: 80%;
     font-size: 16px;
-    margin: 10px auto; /* Centrado en móviles */
+    margin: 10px auto;
   }
 
-  .featured-content1, .success-case-content {
+  /* Secciones con Mayor Flexibilidad */
+  .featured1, .success-case-content, .testimonial-content {
     flex-direction: column;
     gap: 40px;
     padding: 20px;
   }
 
-  .testimonial-content {
-    gap: 20px;
-  }
-
   .services-grid1 {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas en tablets */
     gap: 30px;
   }
 
   .footer {
     font-size: 15px;
-  }
-}
-
-/* Para pantallas medianas (pantallas hasta 1024px) */
-@media (max-width: 1024px) {
-  .navbar {
-    padding: 10px 8%;
-  }
-
-  .hero-content h1 {
-    font-size: 32px;
-  }
-
-  .featured-content1, .success-case-content {
-    gap: 60px;
-  }
-
-  .testimonial-content {
-    gap: 30px;
-  }
-
-  .services-grid1 {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-
-  .footer {
-    padding: 30px;
   }
 
   .contact-info {
