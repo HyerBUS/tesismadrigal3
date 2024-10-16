@@ -770,3 +770,156 @@ header {
 .footer-copyright p {
   margin: 0; /* Eliminar cualquier margen */
 }
+
+/* Estilos Responsive */
+
+/* Para móviles pequeños (pantallas hasta 480px) */
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+    background-color: #1428A0; /* Fondo visible para móviles */
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 22px;
+    padding: 0 10px; /* Mejor ajuste para móviles */
+  }
+
+  .hero-content p {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .btn {
+    width: 90%;
+    font-size: 14px;
+    margin-bottom: 20px; /* Espacio entre botones */
+  }
+
+  .testimonial {
+    padding: 20px;
+  }
+
+  .testimonial-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .featured-content1, .success-case-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .cta-button, .cta-button1, .success-case-button {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  .services-grid1 {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .logo-img, .logo-img3 {
+    width: 70%;
+  }
+}
+
+/* Para tablets (pantallas hasta 768px) */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 5%;
+    background-color: #1428A0;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .btn {
+    width: 80%;
+    font-size: 16px;
+    margin: 10px auto; /* Centrado en móviles */
+  }
+
+  .featured-content1, .success-case-content {
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+  }
+
+  .testimonial-content {
+    gap: 20px;
+  }
+
+  .services-grid1 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .footer {
+    font-size: 15px;
+  }
+}
+
+/* Para pantallas medianas (pantallas hasta 1024px) */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 10px 8%;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .featured-content1, .success-case-content {
+    gap: 60px;
+  }
+
+  .testimonial-content {
+    gap: 30px;
+  }
+
+  .services-grid1 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .footer {
+    padding: 30px;
+  }
+
+  .contact-info {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
