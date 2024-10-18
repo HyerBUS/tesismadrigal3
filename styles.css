@@ -853,49 +853,30 @@ html, body {
     
   }
 
-  /* Ajuste de las imágenes de la sección destacada */
   .featured1 {
-    display: flex;
- /* Organización horizontal */
-    gap: 5px;
-
-    width: auto;
-
-    margin-top: -75px;
-   
-  }
-.featured-title1  { 
-  font-size: 20px;
+    flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    gap: 10px;
+    margin: 0 auto;
+    width: 200%;
 }
-.text-content1 p  { 
-  font-size: 10px;
-  width: 300px;
-  text-align: center;
-  margin-left: -70px;
-}
-  .text-content1 {
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-  }
 
-  .featured-image1 {
-    width: 100%; /* Las imágenes ocupan el 100% del ancho */
-    height: auto;
-  }
- .text-content1 a {
-    font-size: 8px;
-   position: absolute;
-   width: 200px;
-   margin-left: -100px;
-  }
-  .featured-image1 {
+.featured-image1 {
+  display: none;
+width: 150%; /* Imagen ocupa todo el ancho en móviles */
+   height: 300px; /* Ajuste de altura para pantallas pequeñas */
+}
+
+.text-content1 p {
+    font-size: 12px; /* Texto más pequeño para móviles */
+}
+
+.text-content1 a {
+    font-size: 12px;
     width: 100%;
-    height: auto;
-    object-fit: cover; /* Esto asegura que la imagen se ajuste sin distorsionarse */
-    max-height: 300px; /* Ajusta el tamaño máximo según tus necesidades */
-    border-radius: 10px; /* Opcional, para darle bordes redondeados */
-    margin-bottom: 20px; /* Espacio entre la imagen y el siguiente contenido */
+}
+
+.image-content1 {
+    width: 100px; /* Ajuste del tamaño de imagen en móviles */
 }
 /* Banner */
 /* Permite que el contenido del banner se ajuste automáticamente */
@@ -1031,7 +1012,7 @@ html, body {
     transition: background-color 0.3s ease;
     width: 120px;
     font-family: "Comfortaa", sans-serif;
-    font-weight: 1000;
+    font-weight: bold;
     text-align: center;
     align-items: center;
     margin-left: 45px;
@@ -1041,24 +1022,38 @@ html, body {
   .overlay2 .btn1:hover {
     background-color: #2546fd;
   }
-  /* Services Grid */
-  .services-grid1 {
-    display: grid;
-    grid-template-columns: 1fr ; /* Una columna por defecto */
-    gap: 20px;
-    padding: 20px;
-    margin-left: 25px;
-    margin-top: -65px;
- 
+  /* Grilla de Servicios (desktop y mobile) */
+.services-grid1 {
+  display: grid;
+  grid-template-columns: 1fr; /* Por defecto, una columna */
+  gap: 20px;
+  padding: 20px;
+  margin: 0 auto; /* Centramos la grilla horizontalmente */
+  width: 70%; /* Ocupa todo el ancho disponible */
+  max-width: 1200px; /* Limitar el ancho en pantallas grandes */
 }
 
+/* Tarjetas de servicio */
 .service-card1 {
-    width: 100%; /* Asegura que cada tarjeta ocupe todo el ancho en la columna */
-    padding: 20px;
-    background-color: #f9f9f9; /* Un color suave de fondo */
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para cada tarjeta */
-    text-align: center;
+  width: 100%; /* Tarjeta ocupa todo el ancho de su columna */
+  padding: 20px;
+  background-color: #f9f9f9; /* Fondo suave */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  text-align: center;
+}
+
+/* Responsividad (ajustes para móviles) */
+@media screen and (max-width: 768px) {
+  .services-grid1 {
+      padding: 10px; /* Reducir el padding en pantallas pequeñas */
+      margin: 0 auto; /* Aseguramos que esté centrado */
+      max-width: 100%; /* Ancho total en móviles */
+  }
+
+  .service-card1 {
+      padding: 10px; /* Reducimos el padding dentro de cada tarjeta en móviles */
+  }
 }
 
   /* Ajuste del tamaño del texto en el pie de página */
@@ -1070,7 +1065,7 @@ footer {
 }
 
 .footer-socials h2 {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat Black", sans-serif;
     font-size: 20px;
     margin-bottom: 20px;
     color: #ffffff;
@@ -1103,10 +1098,11 @@ footer {
 }
 
 .logo-img3 {
-  width: 200px;
-    display: block;
-    margin-bottom: 20px;
-    margin-left: 100px;
+  align-items: center;
+  max-width: 200px;
+  width: 90%;
+  margin: 0 35%;
+
 }
 
 .nav-links3 {
@@ -1114,7 +1110,7 @@ footer {
     padding: 0;
     flex-wrap: wrap;
     gap: 50px;
-    margin-left: 280px;
+    margin: 0 auto;
 }
 
 .nav-links3 li {
