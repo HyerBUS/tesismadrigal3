@@ -900,6 +900,8 @@ html, body {
 /* Banner */
 /* Permite que el contenido del banner se ajuste automáticamente */
 .visual-section {
+  width: 100%;
+  position: relative;
   margin: 0 auto;
   margin-top: -20px;
   margin-bottom: 30px;
@@ -917,28 +919,21 @@ html, body {
   padding: 10px 20px; /* Ajusta el tamaño del botón */
   font-size: 1rem; /* Ajusta el tamaño de la fuente del botón */
 }
-
-.text-content {
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 100px;
-  font-size: 8px;
-  text-align: center; /* Centra el texto */
-  margin-bottom: 20px; /* Espacio entre el texto y otros elementos */
-}
 .overlay {
+align-items: center;
   text-align: center;
   margin: 0 auto;
   margin-top: 7%;
+  margin-left: -20%;
 }
 .overlay h2 { 
-  font-size: 18px;
+  font-size: 15px;
   text-align: center;
 }
 .overlay .span { 
   width: 100%;
-  font-size: 20px;
-  text-align: center;
+  font-size: 18px;
+  text-align: left;
   margin: 0 auto;
 }
 .overlay .btn { 
@@ -947,6 +942,7 @@ html, body {
   width: 115px;
   align-items: center;
   margin: 0 auto;
+  padding: 10px 10px;
 }
   /* Sección de testimonios */
   .testimonial-content {
