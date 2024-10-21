@@ -532,7 +532,7 @@ header {
 }
 
 .overlay2 .btn1 {
-  padding: 15px 30px; 
+  padding: 15px 30px;
   background-color: #1428a0;
   color: white;
   border: none;
@@ -603,7 +603,7 @@ header {
   font-weight: 700;
   color: #1428a0; /* Azul intenso */
 }
-.Service-card-style { 
+.Service-card-style {
   text-decoration: none;
 }
 /* Footer Styles */
@@ -662,8 +662,8 @@ header {
 }
 
 .logo3 a {
-  padding: 0; 
-  margin: 0; 
+  padding: 0;
+  margin: 0;
 }
 
 .logo-img3 {
@@ -694,7 +694,7 @@ header {
 .nav-links3 a {
   color: white;
   font-family: "Comfortaa", sans-serif;
-  font-weight: 300; 
+  font-weight: 300;
   font-size: 16px;
   text-decoration: none;
   transition: color 0.3s ease;
@@ -772,21 +772,20 @@ header {
   margin: 0;
 }
 
-
 /* Solución específica para evitar desbordamiento horizontal */
-html, body {
+html,
+body {
   overflow-x: hidden; /* Evita que la página se desborde en horizontal */
 }
 
 /* Para asegurarnos de que no hay elementos que causen desbordamiento */
 .container {
   max-width: 100vw; /* Limita el ancho máximo al tamaño de la ventana */
-  margin: 0 auto;   /* Centra el contenido */
+  margin: 0 auto; /* Centra el contenido */
 }
 /* Estilos para móviles */
 /* Estilos para móviles */
 @media only screen and (max-width: 768px) {
-
   /* Navbar */
   .navbar {
     flex-direction: column;
@@ -798,7 +797,7 @@ html, body {
   }
 
   .logo {
-    padding:  0;
+    padding: 0;
     margin-top: -20px;
     width: 100%; /* Se adapta al ancho del contenedor */
     max-width: 400px; /* Asegura que no supere los 400px */
@@ -860,7 +859,6 @@ html, body {
     width: 120px;
     padding: 10px;
     font-size: 8px;
-    
   }
 
   .featured1 {
@@ -897,53 +895,52 @@ html, body {
     max-width: 300px; /* Tamaño máximo de imagen en móviles */
     margin-bottom: 15px; /* Ajuste del margen en pantallas pequeñas */
   }
-/* Banner */
-/* Permite que el contenido del banner se ajuste automáticamente */
-.visual-section {
-  margin-top: -20px;
-  height: 200;
-  padding: 20px;
-}
-.overlay {
-padding-top: 10%;
-margin: 0 auto;
-text-align: center;
-align-items: center;
-}
-.overlay h2 {
-width: 100%;
-margin-top: 30px;
-  text-align: center;
-  font-size: 20px;
+  /* Banner */
+  /* Permite que el contenido del banner se ajuste automáticamente */
+  .visual-section {
+    margin-top: -20px;
+    height: 200;
+    padding: 20px;
+  }
+  .overlay {
+    padding-top: 10%;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+  }
+  .overlay h2 {
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 20px;
+    margin: 0 auto;
+  }
+  .overlay h2 span {
+    font-size: 20px;
+    margin: 0 auto;
+  }
+  .overlay .btn {
+    padding: 15px 30px;
+    background-color: #1428a0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 120px;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 8px;
+  }
 
-  margin: 0 auto;
-}
-.overlay h2 span {
-font-size: 25px; 
-margin: 0 auto; 
-}
-.overlay .btn {
-  padding: 15px 30px;
-  background-color: #1428a0;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  width: 120px;
-  font-family: "Comfortaa", sans-serif;
-  font-weight: bold;
-  text-align: center;
-  align-items: center;
-  margin: 0 auto;
-  font-size: 8px;
-}
-
-.overlay .btn:hover {
-  background-color: #2546fd;
-}
+  .overlay .btn:hover {
+    background-color: #2546fd;
+  }
   /* Sección de testimonios */
   .testimonial-content {
     margin-top: -21px;
@@ -952,10 +949,10 @@ margin: 0 auto;
     gap: 10px;
     height: 250%;
   }
-.testimonial-content img {
-width: 30%;
-height: auto;
-}
+  .testimonial-content img {
+    width: 30%;
+    height: auto;
+  }
   .testimonial-text {
     text-align: center;
     font-size: 10px; /* Ajuste de tamaño de texto */
@@ -965,14 +962,14 @@ height: auto;
     text-align: center;
     font-size: 10px; /* Ajuste de tamaño de texto */
   }
-  .testimonial-title { 
+  .testimonial-title {
     text-align: left;
     font-size: 15px;
   }
-  .rating { 
+  .rating {
     font-size: 10px;
   }
-  .testimonial-action .cta-button{
+  .testimonial-action .cta-button {
     align-items: center;
     align-content: center;
     font-size: 8px;
@@ -988,14 +985,15 @@ height: auto;
     margin: 0 auto;
   }
 
-  .success-case-text, .success-case-image-content {
+  .success-case-text,
+  .success-case-image-content {
     width: 100%;
     text-align: center;
     margin: 0 auto;
   }
-.success-case-text h2 {
-  font-size: 20px;
-}
+  .success-case-text h2 {
+    font-size: 20px;
+  }
   .success-case-image {
     width: 100%;
     height: auto;
@@ -1008,51 +1006,51 @@ height: auto;
     width: 125px;
     margin: 0 auto;
   }
- .success-case-testimonial  {
-  font-size: 10px;
-  margin: 0 auto;
- }
- .success-case-name  {
-  font-size: 12px;
-  margin: 0 auto;
- }
- .success-case-testimonials {
-  display: block;
-  margin-top: 51px;
-  margin: 0 auto;
- }
- .success-case-testimonial-item {
-  width: 80%;
-  margin: 0 auto;
- }
- .success-case-testimonial-item img {
-  margin-top: 30%;
-  width: 70%;
-  height: auto;
- }
+  .success-case-testimonial {
+    font-size: 10px;
+    margin: 0 auto;
+  }
+  .success-case-name {
+    font-size: 12px;
+    margin: 0 auto;
+  }
+  .success-case-testimonials {
+    display: block;
+    margin-top: 51px;
+    margin: 0 auto;
+  }
+  .success-case-testimonial-item {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .success-case-testimonial-item img {
+    margin-top: 30%;
+    width: 70%;
+    height: auto;
+  }
   /* Sección visual (banners) */
   .visual-section2 {
     margin-top: -20px;
     height: 200;
     padding: 20px;
   }
-.overlay2 {
-  padding-top: 10%;
-  margin: 0 auto;
-  text-align: center;
-  align-items: center;
-}
-.overlay2 h2 {
-  width: 100%;
-  margin-top: 30px;
+  .overlay2 {
+    padding-top: 10%;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+  }
+  .overlay2 h2 {
+    width: 100%;
+    margin-top: 30px;
     text-align: center;
     font-size: 20px;
 
     margin: 0 auto;
   }
-.overlay2 h2 span {
-  font-size: 25px; 
-  margin: 0 auto; 
+  .overlay2 h2 span {
+    font-size: 25px;
+    margin: 0 auto;
   }
   .overlay2 .btn1 {
     padding: 15px 30px;
@@ -1072,111 +1070,111 @@ height: auto;
     margin: 0 auto;
     font-size: 8px;
   }
-  
+
   .overlay2 .btn1:hover {
-    background-color: #2546fd;
+    background-color: #2546fd;
   }
   /* Grilla de Servicios (desktop y mobile) */
-.services-grid1 {
-  display: grid;
-  grid-template-columns: 1fr; /* Por defecto, una columna */
-  gap: 20px;
-  padding: 20px;
-  margin: 0 auto; /* Centramos la grilla horizontalmente */
-  width: 70%; /* Ocupa todo el ancho disponible */
-  max-width: 1200px; /* Limitar el ancho en pantallas grandes */
-}
-
-/* Tarjetas de servicio */
-.service-card1 {
-  width: 100%; /* Tarjeta ocupa todo el ancho de su columna */
-  padding: 20px;
-  background-color: #f9f9f9; /* Fondo suave */
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-  text-align: center;
-}
-.service-title1  {
-  font-size: 10px;
-}
-.service-subtitle1 {
-  font-size: 15px;
-}
-
-/* Responsividad (ajustes para móviles) */
-@media screen and (max-width: 768px) {
   .services-grid1 {
+    display: grid;
+    grid-template-columns: 1fr; /* Por defecto, una columna */
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto; /* Centramos la grilla horizontalmente */
+    width: 70%; /* Ocupa todo el ancho disponible */
+    max-width: 1200px; /* Limitar el ancho en pantallas grandes */
+  }
+
+  /* Tarjetas de servicio */
+  .service-card1 {
+    width: 100%; /* Tarjeta ocupa todo el ancho de su columna */
+    padding: 20px;
+    background-color: #f9f9f9; /* Fondo suave */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center;
+  }
+  .service-title1 {
+    font-size: 10px;
+  }
+  .service-subtitle1 {
+    font-size: 15px;
+  }
+
+  /* Responsividad (ajustes para móviles) */
+  @media screen and (max-width: 768px) {
+    .services-grid1 {
       padding: 10px; /* Reducir el padding en pantallas pequeñas */
       margin: 0 auto; /* Aseguramos que esté centrado */
       max-width: 100%; /* Ancho total en móviles */
-  }
+    }
 
-  .service-card1 {
+    .service-card1 {
       padding: 10px; /* Reducimos el padding dentro de cada tarjeta en móviles */
+    }
   }
-}
 
   /* Ajuste del tamaño del texto en el pie de página */
-footer {
+  footer {
     background-color: #0a2b4d; /* Fondo oscuro */
     color: white;
     text-align: center;
     padding: 20px;
-}
+  }
 
-.footer-socials h2 {
+  .footer-socials h2 {
     font-family: "Montserrat Black", sans-serif;
     font-size: 20px;
     margin-bottom: 20px;
     color: #ffffff;
-}
+  }
 
-.footer-socials .social-icons {
+  .footer-socials .social-icons {
     display: flex;
     justify-content: center;
     gap: 30px;
     margin-left: 40px;
-}
+  }
 
-.footer-socials .social-item {
+  .footer-socials .social-item {
     text-align: center;
-}
+  }
 
-.social-item img {
+  .social-item img {
     width: 50px; /* Ajusta el tamaño de los íconos sociales */
     height: 50px;
-}
+  }
 
-.navbar3 {
-  flex-direction: column;
+  .navbar3 {
+    flex-direction: column;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;
     margin-top: 0;
     align-items: center;
     margin-top: 30px;
-}
+  }
 
-.logo-img3 {
-  align-items: center;
-  max-width: 200px;
-  width: 90%;
-  margin: 0 35%;
-}
+  .logo-img3 {
+    align-items: center;
+    max-width: 200px;
+    width: 90%;
+    margin: 0 35%;
+  }
 
-.nav-links3 {
+  .nav-links3 {
     list-style: none;
     padding: 0;
     flex-wrap: wrap;
     gap: 50px;
     margin: 0 auto;
-}
+  }
 
-.nav-links3 li {
+  .nav-links3 li {
     margin-bottom: 10px;
-}
+  }
 
-.contact-info {
+  .contact-info {
     margin-top: 30px;
     text-align: center;
     display: flex;
@@ -1184,15 +1182,15 @@ footer {
     flex-wrap: wrap;
     padding: 20px;
     margin-left: 25px;
-}
+  }
 
-.contact-left,
-.contact-right {
+  .contact-left,
+  .contact-right {
     flex: 1;
     margin-bottom: 10px;
-}
+  }
 
-.contact-button10 {
+  .contact-button10 {
     padding: 10px 20px;
     background-color: #ffffff;
     color: #0a2b4d;
@@ -1200,53 +1198,50 @@ footer {
     border-radius: 5px;
     display: inline-block;
     margin-top: 10px;
-}
+  }
 
-.footer-copyright {
+  .footer-copyright {
     margin-top: 20px;
     font-size: 14px;
     color: #ffffff;
-}
-    .footer-socials .social-icons {
-        flex-direction: column; /* Hace que los íconos sociales estén en columna */
-    }
-
-    .social-item {
-        margin-bottom: 20px;
-    }
-
-    .contact-info {
-     
-        flex-direction: column; /* Coloca la información de contacto en columna */
-        text-align: center;
-    }
-
-    .contact-left { 
-        margin-bottom: 20px;
-        
-       
-    }
-    .contact-right {
-      margin-top: 20px;
-      width: 140%;
-      margin: 0 auto;
-      text-align: center;
-    }
-    .navbar3 .logo-img3 {
-      order: -1; /* Este cambio mueve el logo antes de los enlaces de navegación */
-      margin-bottom: 20px;
   }
-    .nav-links3 {
-        text-align: center;
-    }
+  .footer-socials .social-icons {
+    flex-direction: column; /* Hace que los íconos sociales estén en columna */
+  }
 
-    .nav-links3 li {
-        display: inline-block;
-        margin: 0 10px;
-    }
+  .social-item {
+    margin-bottom: 20px;
+  }
 
-    .navbar3 .logo3 {
-        margin-bottom: 20px;
-        text-align: center;
-    }
+  .contact-info {
+    flex-direction: column; /* Coloca la información de contacto en columna */
+    text-align: center;
+  }
+
+  .contact-left {
+    margin-bottom: 20px;
+  }
+  .contact-right {
+    margin-top: 20px;
+    width: 140%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .navbar3 .logo-img3 {
+    order: -1; /* Este cambio mueve el logo antes de los enlaces de navegación */
+    margin-bottom: 20px;
+  }
+  .nav-links3 {
+    text-align: center;
+  }
+
+  .nav-links3 li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  .navbar3 .logo3 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
 }
