@@ -905,14 +905,12 @@ html, body {
   margin: 0 auto;
   margin-top: -20px;
   margin-bottom: 30px;
-  display: flex;
   background-size: cover; /* Ajusta la imagen de fondo al tamaño del contenedor */
   background-position: center;
 }
 .overlay {
-  width: 60%;
-  margin: 0 auto;
-align-items: center;  
+  width: 100%;
+  margin: 0 auto; 
 text-align: center;
   margin-top: 7%;
  
@@ -922,9 +920,8 @@ text-align: center;
   text-align: center;
 }
 .overlay h2 .span {
-  position: hidden;
   width: 100%;
-  font-size: 12px;
+  font-size: 16px;
   text-align: center;
   margin: 0 auto;
 
