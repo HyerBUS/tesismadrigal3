@@ -906,8 +906,6 @@ html, body {
   margin-top: -20px;
   margin-bottom: 30px;
   display: flex;
-  flex-direction: column; /* Alinea el contenido de forma vertical */
-  justify-content: center; /* Centra verticalmente el contenido */
   background-size: cover; /* Ajusta la imagen de fondo al tamaño del contenedor */
   background-position: center;
 }
