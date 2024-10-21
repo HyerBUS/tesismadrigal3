@@ -907,7 +907,6 @@ html, body {
   margin-bottom: 30px;
   display: flex;
   flex-direction: column; /* Alinea el contenido de forma vertical */
-  align-items: center; /* Centra horizontalmente el contenido */
   justify-content: center; /* Centra verticalmente el contenido */
   background-size: cover; /* Ajusta la imagen de fondo al tamaño del contenedor */
   background-position: center;
@@ -915,13 +914,13 @@ html, body {
 .overlay {
   width: 60%;
   margin: 0 auto;
-align-items: center;
-  text-align: center;
+align-items: center;  
+text-align: center;
   margin-top: 7%;
  
 }
 .overlay h2 { 
-  font-size: 15px;
+  font-size: 12px;
   text-align: center;
 }
 .overlay h2 .span {
@@ -963,7 +962,7 @@ height: auto;
     font-size: 10px; /* Ajuste de tamaño de texto */
   }
   .testimonial-title { 
-    text-align: center;
+    text-align: left;
     font-size: 15px;
   }
   .rating { 
