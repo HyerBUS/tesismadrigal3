@@ -1293,8 +1293,7 @@ header {
   font-family: "Comfortaa", sans-serif;
   font-weight: 1000;
   text-align: center;
-  align-items: center;
-  margin-left: 870px;
+  margin-left: auto;
 }
 
 .overlay5 .btn5:hover {
@@ -1794,11 +1793,22 @@ header {
 
   /* Logo */
   .logo {
+    display: flex;
+    justify-content: center; /* Centra el logo horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    width: 100%; /* Asegura que ocupe el 100% del ancho disponible */
+    max-width: 400px; /* Máximo ancho que puede tener */
+    margin: 0 auto; /* Centra el contenedor */
     margin-top: -20px;
-    width: 200px; /* Ajusta el tamaño del logo en pantallas pequeñas */
-    height: auto; /* Mantiene la proporción */
-    margin: 0 auto;
-  }
+}
+
+.logo-img {
+  width: 130px;
+    max-width: 400px; /* Asegura que la imagen no exceda el tamaño del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina cualquier espacio adicional alrededor de la imagen */
+    margin: 0 auto; /* Centra la imagen dentro del contenedor */
+}
 
   /* Nav-links debajo del logo */
   .nav-links {
@@ -1838,7 +1848,7 @@ header {
     justify-content: center; /* Centra verticalmente el contenido */
     margin: 0 auto;
     width: 100%;
-    height: 65vw;
+    height: 250px;
   }
 
   /* Evitar desbordamiento horizontal */
@@ -1892,7 +1902,7 @@ header {
   }
 
   .image-content1 {
-    margin-top: -35vw;
+    margin-top: -35%;
     margin-bottom: -20vw;
     width: 100%;
     max-width: 300px; /* Tamaño ajustado para pantallas pequeñas */
@@ -2080,7 +2090,9 @@ footer {
     }
     .contact-right {
       margin-top: 20px;
-      margin-left: 65px;
+      width: 140%;
+      margin: 0 auto;
+      text-align: center;
     }
     .navbar3 .logo-img3 {
       order: -1; /* Este cambio mueve el logo antes de los enlaces de navegación */
@@ -2196,10 +2208,17 @@ footer {
       font-size: 10px; /* Ajusta el tamaño del botón */
   }
   .visual-section004 {
+width: 100%;
+position: relative;
+object-position: right;
     text-align: center;
     height: 40vh; /* Ajusta la altura del banner para pantallas más pequeñas */
-}
+    background-position: right;
+  }
 
+.overlay004 { 
+  padding-top: 15% ;
+}
 .overlay004 h2 {
   text-align: center;
     font-size: 18px; /* Reduce el tamaño del texto principal */
@@ -2208,11 +2227,13 @@ footer {
 .overlay004 h2 span {
     font-size: 30px; /* Reduce el tamaño del subtítulo */
 }
-.btn004 a {
+.visual-section004 .btn004  {
+  margin: 0 auto;
     text-align: center;
-    font-size: 8rem; /* Ajusta el tamaño del botón */
-    padding: 10px 15px;
+    font-size: 8px; /* Ajusta el tamaño del botón */
+    padding: 10px 10px;
     width: 100px;
+    border-radius: 5px;
 }
 
 .featured04 {
@@ -2472,11 +2493,14 @@ align-items: center;
   
   }
   .visual-section5 {
+    background-position: left;
     margin-top: -15vw;
     text-align: center;
     height: 40vh; /* Ajusta la altura del banner para pantallas más pequeñas */
 }
-
+.overlay5 { 
+  padding-top: 50px;
+}
 .overlay5 h2 {
   text-align: center;
     font-size: 18px; /* Reduce el tamaño del texto principal */
@@ -2485,12 +2509,13 @@ align-items: center;
 .overlay5 h2 span {
     font-size: 30px; /* Reduce el tamaño del subtítulo */
 }
-.overlay5 a {
+.visual-section5 .btn5 {
     text-align: center;
-    font-size: 8rem; /* Ajusta el tamaño del botón */
-    padding: 10px 15px;
+    font-size: 8px; /* Ajusta el tamaño del botón */
+    padding: 10px 10px;
+    margin: 0 auto;
     width: 100px;
-    margin-left: -1050px;
+
 }
 .featured08 {
   padding: 20px; /* Aumenta el padding en pantallas pequeñas */
@@ -2577,7 +2602,7 @@ max-width: 1200px;
 
   .AboutPage-card {
       width: 100%; /* Las tarjetas ocuparán el 100% del contenedor */
-      height: 170vw;
+      height: 170%;
       background: #fff;
       border-radius: 10px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -2587,7 +2612,7 @@ max-width: 1200px;
   .AboutPage-card2 {
 
     width: 100%; /* Las tarjetas ocuparán el 100% del contenedor */
-    height: 190vw;
+    height: 190%;
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
