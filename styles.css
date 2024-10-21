@@ -916,23 +916,23 @@ html, body {
 }
 .overlay {
   margin: 0 auto;
-  width: 150%;
 align-items: center;
   text-align: center;
   margin-top: 7%;
-  margin-left: -100%;
  
 }
 .overlay h2 { 
   font-size: 15px;
   text-align: center;
 }
-.overlay .span { 
-  width: 100%;
-  font-size: 18px;
+.overlay .span {
+  width: 60%;
+  font-size: 15px;
   text-align: center;
   margin: 0 auto;
+  margin-left: -60%;
 }
+
 .overlay .btn { 
   border-radius: 5px;
   font-size: 8px;
