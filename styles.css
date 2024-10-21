@@ -905,8 +905,6 @@ html, body {
   margin: 0 auto;
   margin-top: -20px;
   margin-bottom: 30px;
-  min-height: 300px; /* Asegura una altura mínima para el banner */
- /* Añade espacio interno para que el contenido no quede pegado a los bordes */
   display: flex;
   flex-direction: column; /* Alinea el contenido de forma vertical */
   align-items: center; /* Centra horizontalmente el contenido */
@@ -925,7 +923,7 @@ align-items: center;
   font-size: 15px;
   text-align: center;
 }
-.overlay .span {
+.overlay h2 .span {
   width: 60%;
   font-size: 15px;
   text-align: center;
