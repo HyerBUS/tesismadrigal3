@@ -913,6 +913,7 @@ html, body {
   background-position: center;
 }
 .overlay {
+  width: 60%;
   margin: 0 auto;
 align-items: center;
   text-align: center;
@@ -924,11 +925,12 @@ align-items: center;
   text-align: center;
 }
 .overlay h2 .span {
-  width: 60%;
-  font-size: 15px;
+  position: hidden;
+  width: 100%;
+  font-size: 18px;
   text-align: center;
   margin: 0 auto;
-  margin-left: -60%;
+
 }
 
 .overlay .btn { 
