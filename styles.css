@@ -532,7 +532,7 @@ header {
 }
 
 .overlay2 .btn1 {
-  padding: 15px 30px;
+  padding: 15px 30px; 
   background-color: #1428a0;
   color: white;
   border: none;
@@ -798,9 +798,17 @@ html, body {
   }
 
   .logo {
+    padding:  0;
     margin-top: -20px;
-    margin-left: 20px;
-    width: 400px;
+    width: 100%; /* Se adapta al ancho del contenedor */
+    max-width: 400px; /* Asegura que no supere los 400px */
+    height: auto; /* Mantiene la proporción */
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 7%;
+    transform: scale(1.5);
+    transform-origin: center;
   }
 
   /* El menú debajo del logo, en fila horizontal */
@@ -812,7 +820,7 @@ html, body {
     text-align: center;
     width: auto;
     flex-wrap: wrap;
-    margin-top: -20px;
+    margin-top: 10px;
   }
 
   .nav-links li {
@@ -835,6 +843,7 @@ html, body {
 
   /* Hero section */
   .hero-content {
+    margin-top: 150px;
     padding-top: 50px;
   }
   .hero-content h1 {
@@ -1122,7 +1131,6 @@ footer {
   max-width: 200px;
   width: 90%;
   margin: 0 35%;
-
 }
 
 .nav-links3 {
@@ -1177,17 +1185,21 @@ footer {
     }
 
     .contact-info {
+     
         flex-direction: column; /* Coloca la información de contacto en columna */
         text-align: center;
     }
 
     .contact-left { 
         margin-bottom: 20px;
+        
        
     }
     .contact-right {
       margin-top: 20px;
-      margin-left: 65px;
+      width: 140%;
+      margin: 0 auto;
+      text-align: center;
     }
     .navbar3 .logo-img3 {
       order: -1; /* Este cambio mueve el logo antes de los enlaces de navegación */
